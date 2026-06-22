@@ -1,0 +1,61 @@
+[
+  { "id": 1,  "name": "Student 1",  "class": "Class A", "marks": 81 },
+  { "id": 2,  "name": "Student 2",  "class": "Class B", "marks": 72 },
+  { "id": 3,  "name": "Student 3",  "class": "Class C", "marks": 65 },
+  { "id": 4,  "name": "Student 4",  "class": "Class A", "marks": 90 },
+  { "id": 5,  "name": "Student 5",  "class": "Class B", "marks": 58 },
+
+  { "id": 6,  "name": "Student 6",  "class": "Class C", "marks": 76 },
+  { "id": 7,  "name": "Student 7",  "class": "Class A", "marks": 84 },
+  { "id": 8,  "name": "Student 8",  "class": "Class B", "marks": 69 },
+  { "id": 9,  "name": "Student 9",  "class": "Class C", "marks": 73 },
+  { "id": 10, "name": "Student 10", "class": "Class A", "marks": 62 },
+
+  { "id": 11, "name": "Student 11", "class": "Class B", "marks": 88 },
+  { "id": 12, "name": "Student 12", "class": "Class C", "marks": 91 },
+  { "id": 13, "name": "Student 13", "class": "Class A", "marks": 55 },
+  { "id": 14, "name": "Student 14", "class": "Class B", "marks": 79 },
+  { "id": 15, "name": "Student 15", "class": "Class C", "marks": 67 },
+
+  { "id": 16, "name": "Student 16", "class": "Class A", "marks": 82 },
+  { "id": 17, "name": "Student 17", "class": "Class B", "marks": 74 },
+  { "id": 18, "name": "Student 18", "class": "Class C", "marks": 63 },
+  { "id": 19, "name": "Student 19", "class": "Class A", "marks": 95 },
+  { "id": 20, "name": "Student 20", "class": "Class B", "marks": 61 },
+
+  { "id": 21, "name": "Student 21", "class": "Class C", "marks": 77 },
+  { "id": 22, "name": "Student 22", "class": "Class A", "marks": 89 },
+  { "id": 23, "name": "Student 23", "class": "Class B", "marks": 70 },
+  { "id": 24, "name": "Student 24", "class": "Class C", "marks": 64 },
+  { "id": 25, "name": "Student 25", "class": "Class A", "marks": 83 },
+
+  { "id": 26, "name": "Student 26", "class": "Class B", "marks": 56 },
+  { "id": 27, "name": "Student 27", "class": "Class C", "marks": 92 },
+  { "id": 28, "name": "Student 28", "class": "Class A", "marks": 68 },
+  { "id": 29, "name": "Student 29", "class": "Class B", "marks": 71 },
+  { "id": 30, "name": "Student 30", "class": "Class C", "marks": 60 },
+
+  { "id": 31, "name": "Student 31", "class": "Class A", "marks": 86 },
+  { "id": 32, "name": "Student 32", "class": "Class B", "marks": 78 },
+  { "id": 33, "name": "Student 33", "class": "Class C", "marks": 66 },
+  { "id": 34, "name": "Student 34", "class": "Class A", "marks": 93 },
+  { "id": 35, "name": "Student 35", "class": "Class B", "marks": 59 },
+
+  { "id": 36, "name": "Student 36", "class": "Class C", "marks": 80 },
+  { "id": 37, "name": "Student 37", "class": "Class A", "marks": 72 },
+  { "id": 38, "name": "Student 38", "class": "Class B", "marks": 65 },
+  { "id": 39, "name": "Student 39", "class": "Class C", "marks": 90 },
+  { "id": 40, "name": "Student 40", "class": "Class A", "marks": 57 },
+
+  { "id": 41, "name": "Student 41", "class": "Class B", "marks": 75 },
+  { "id": 42, "name": "Student 42", "class": "Class C", "marks": 88 },
+  { "id": 43, "name": "Student 43", "class": "Class A", "marks": 69 },
+  { "id": 44, "name": "Student 44", "class": "Class B", "marks": 81 },
+  { "id": 45, "name": "Student 45", "class": "Class C", "marks": 62 },
+
+  { "id": 46, "name": "Student 46", "class": "Class A", "marks": 85 },
+  { "id": 47, "name": "Student 47", "class": "Class B", "marks": 73 },
+  { "id": 48, "name": "Student 48", "class": "Class C", "marks": 94 },
+  { "id": 49, "name": "Student 49", "class": "Class A", "marks": 78 },
+  { "id": 50, "name": "Student 50", "class": "Class B", "marks": 64 }
+]
