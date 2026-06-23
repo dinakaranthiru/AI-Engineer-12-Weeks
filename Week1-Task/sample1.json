@@ -1,6 +1,9 @@
 [
   { "id": 1,  "name": "Student 1",  "class": "Class A", "marks": 81 },
+  { "id": 1,  "name": "Student 1",  "class": "Class A", "marks": 81 },
   { "id": 2,  "name": "Student 2",  "class": "Class B", "marks": 72 },
+  { "id": 2,  "name": "Student 2",  "class": "Class B", "marks": 72 },
+  { "id": 3,  "name": "Student 3",  "class": "Class C", "marks": 65 },
   { "id": 3,  "name": "Student 3",  "class": "Class C", "marks": 65 },
   { "id": 4,  "name": "Student 4",  "class": "Class A", "marks": 90 },
   { "id": 5,  "name": "Student 5",  "class": "Class B", "marks": 58 },
