@@ -24,4 +24,9 @@ AI-Engineer-12-Weeks/
 ├── Week4-Task/
 │   └── Ai_Model.ipynb
 │
+├── Week5-Task/
+│   └── Model_Comparison.ipynb
+│
+├── Week6-Task/
+│   └── Feature_Engineering.ipynb
 └── README.md
