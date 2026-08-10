@@ -29,4 +29,8 @@ AI-Engineer-12-Weeks/
 │
 ├── Week6-Task/
 │   └── Feature_Engineering.ipynb
+│
+├── Week7_Task/
+│   └── NLP_Text_Classification.ipynb
+│
 └── README.md
