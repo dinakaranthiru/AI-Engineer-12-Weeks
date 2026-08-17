@@ -1,0 +1,51 @@
+text,category
+Cannot login,Login issue
+Unable to log in to my account,Login issue
+Login page keeps failing,Login issue
+Forgot password and cannot sign in,Login issue
+Incorrect username or password error,Login issue
+My login credentials are not working,Login issue
+App won't let me log in,Login issue
+Sign in button does not respond,Login issue
+Two-factor authentication failed,Login issue
+Account locked after multiple attempts,Login issue
+Cannot access account after password reset,Login issue
+Login session expires immediately,Login issue
+Upload failed,Upload issue
+File upload is not working,Upload issue
+Cannot upload my document,Upload issue
+Upload keeps getting stuck at 90 percent,Upload issue
+Error while uploading image,Upload issue
+Attachment upload failed repeatedly,Upload issue
+Unable to upload large files,Upload issue
+Document upload shows unknown error,Upload issue
+Drag and drop upload not working,Upload issue
+Upload takes forever and then fails,Upload issue
+File format not accepted during upload,Upload issue
+Upload progress bar freezes midway,Upload issue
+Network timeout,Network issue
+Connection keeps dropping,Network issue
+Slow internet connection on app,Network issue
+Server not responding due to network error,Network issue
+Network unreachable error,Network issue
+Wifi disconnects while using the app,Network issue
+Timeout error connecting to server,Network issue
+Frequent packet loss detected,Network issue
+VPN connection keeps disconnecting,Network issue
+Application cannot reach backend server,Network issue
+Request failed due to network latency,Network issue
+Internet connection unstable,Network issue
+Permission denied,Permission issue
+Access denied to this folder,Permission issue
+User does not have permission to view file,Permission issue
+Insufficient permissions to edit document,Permission issue
+Admin rights required error,Permission issue
+Cannot access restricted resource,Permission issue
+Permission error when opening file,Permission issue
+Read-only access preventing changes,Permission issue
+Authorization failed for requested action,Permission issue
+User role does not allow this operation,Permission issue
+Access revoked unexpectedly,Permission issue
+Cannot delete file due to permissions,Permission issue
+Folder sharing permissions missing,Permission issue
+Security policy blocks access,Permission issue
