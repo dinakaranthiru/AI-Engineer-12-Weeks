@@ -33,4 +33,7 @@ AI-Engineer-12-Weeks/
 ├── Week7_Task/
 │   └── NLP_Text_Classification.ipynb
 │
+├── Week8_Task/
+│   └── Sentiment_Analysis.ipynb
+│
 └── README.md
