@@ -1,0 +1,301 @@
+review,sentiment,rating
+"Top notch camera, sturdy, stylish, and easy to use.",Positive,5
+"Best camera I have ever owned, worth every penny.",Positive,5
+"Very satisfied customer here, this phone is outstanding.",Positive,4
+"This jacket is reliable, comfortable, and simply amazing.",Positive,5
+"I regret buying this tablet, it stopped working within a week.",Negative,2
+"I am so happy with this headphones, it arrived quickly and works great.",Positive,4
+The backpack stopped functioning properly after minimal use.,Negative,1
+"Very satisfied customer here, this bottle is outstanding.",Positive,4
+"This shoes is amazing, exceeded all my expectations!",Positive,5
+"Terrible quality watch, not worth the price at all.",Negative,2
+"Disappointing purchase, this tablet malfunctions constantly.",Negative,2
+"I am so happy with this bottle, it arrived quickly and works great.",Positive,4
+The tablet arrived damaged and customer service was unhelpful.,Negative,2
+"The blender exceeded my expectations, five stars from me.",Positive,4
+"Disappointing purchase, this wallet malfunctions constantly.",Negative,1
+"Extremely uncomfortable wallet, returning it right away.",Negative,2
+The monitor feels premium and performs even better.,Positive,4
+"I regret buying this monitor, it stopped working within a week.",Negative,1
+"I love how well made this mouse is, no complaints at all.",Positive,5
+"Disappointing purchase, this mouse malfunctions constantly.",Negative,2
+"Very satisfied customer here, this bottle is outstanding.",Positive,4
+The camera stopped functioning properly after minimal use.,Negative,1
+"Worst sunglasses I have ever bought, complete waste of money.",Negative,1
+"Absolutely love this jacket, best purchase I've made this year.",Positive,4
+This mouse is the worst product I have purchased online.,Negative,2
+The shoes feels premium and performs even better.,Positive,5
+"Extremely uncomfortable wallet, returning it right away.",Negative,2
+"Awful experience, the shoes does not work as advertised.",Negative,2
+"Fantastic shoes, customer service was also very helpful.",Positive,4
+"Horrible tablet, I want a refund immediately.",Negative,2
+"I regret buying this jacket, it stopped working within a week.",Negative,1
+"Top notch laptop, sturdy, stylish, and easy to use.",Positive,4
+The watch was delivered late and in poor condition.,Negative,2
+"Disappointing purchase, this shoes malfunctions constantly.",Negative,1
+"I am so happy with this sunglasses, it arrived quickly and works great.",Positive,4
+"Great quality watch for the price, highly recommend to everyone.",Positive,5
+"Very satisfied customer here, this sunglasses is outstanding.",Positive,4
+"I love how well made this camera is, no complaints at all.",Positive,4
+"This keyboard broke after just two days of use, very disappointed.",Negative,1
+"This sunglasses is a game changer, super comfortable and durable.",Positive,5
+"This wallet broke after just two days of use, very disappointed.",Negative,1
+"Wonderful experience with this wallet, works flawlessly.",Positive,5
+"Couldn't be happier with this camera, great purchase.",Positive,4
+"Awful experience, the laptop does not work as advertised.",Negative,2
+"Best shoes I have ever owned, worth every penny.",Positive,4
+Excellent phone! Fast shipping and amazing build quality.,Positive,5
+"Poor performance and bad quality, this headphones is a scam.",Negative,1
+"I love how well made this jacket is, no complaints at all.",Positive,5
+The blender feels premium and performs even better.,Positive,4
+"Not satisfied at all, this keyboard is defective and useless.",Negative,1
+"Extremely uncomfortable keyboard, returning it right away.",Negative,2
+"Very satisfied customer here, this headphones is outstanding.",Positive,4
+"This headphones is a total disappointment, would not recommend.",Negative,2
+The shoes feels premium and performs even better.,Positive,4
+"Best charger I have ever owned, worth every penny.",Positive,4
+"Cheaply made bottle, broke on the first day of use.",Negative,1
+"Poor performance and bad quality, this jacket is a scam.",Negative,2
+"Not satisfied at all, this keyboard is defective and useless.",Negative,2
+"Extremely uncomfortable mouse, returning it right away.",Negative,1
+"This watch is reliable, comfortable, and simply amazing.",Positive,5
+"Top notch charger, sturdy, stylish, and easy to use.",Positive,5
+"Best jacket I have ever owned, worth every penny.",Positive,4
+"Fantastic backpack, customer service was also very helpful.",Positive,5
+"I am so happy with this tablet, it arrived quickly and works great.",Positive,5
+"This laptop is exactly what I needed, works like a charm.",Positive,4
+"Wonderful experience with this blender, works flawlessly.",Positive,5
+"Fantastic mouse, customer service was also very helpful.",Positive,4
+"This blender is a game changer, super comfortable and durable.",Positive,5
+"Great quality phone for the price, highly recommend to everyone.",Positive,5
+"This phone is a game changer, super comfortable and durable.",Positive,5
+"Superb quality and great value, this bottle is perfect.",Positive,4
+"Superb quality and great value, this speaker is perfect.",Positive,5
+"Top notch charger, sturdy, stylish, and easy to use.",Positive,4
+"I am very unhappy with this watch, it simply does not work.",Negative,2
+"Top notch speaker, sturdy, stylish, and easy to use.",Positive,5
+"This mouse is overpriced junk, do not waste your money.",Negative,1
+"Cheaply made monitor, broke on the first day of use.",Negative,2
+"Great quality jacket for the price, highly recommend to everyone.",Positive,4
+The mouse feels premium and performs even better.,Positive,4
+"Top notch blender, sturdy, stylish, and easy to use.",Positive,5
+This charger is the worst product I have purchased online.,Negative,2
+"I am very unhappy with this bottle, it simply does not work.",Negative,2
+"This shoes is overpriced junk, do not waste your money.",Negative,1
+"This watch is overpriced junk, do not waste your money.",Negative,1
+"Worst wallet I have ever bought, complete waste of money.",Negative,2
+The mouse stopped functioning properly after minimal use.,Negative,1
+"This monitor is overpriced junk, do not waste your money.",Negative,2
+"Really impressed with this shoes, will definitely buy again.",Positive,5
+The keyboard works perfectly and looks even better than the pictures.,Positive,4
+"Great quality laptop for the price, highly recommend to everyone.",Positive,4
+The mattress feels premium and performs even better.,Positive,4
+"Extremely uncomfortable camera, returning it right away.",Negative,1
+"Cheaply made shoes, broke on the first day of use.",Negative,1
+"Terrible quality tablet, not worth the price at all.",Negative,2
+The tablet feels premium and performs even better.,Positive,5
+"Terrible quality monitor, not worth the price at all.",Negative,2
+"Poor performance and bad quality, this phone is a scam.",Negative,2
+"Very satisfied customer here, this keyboard is outstanding.",Positive,5
+"Disappointing purchase, this keyboard malfunctions constantly.",Negative,2
+"Best phone I have ever owned, worth every penny.",Positive,4
+"The phone looks nothing like the pictures, very misleading.",Negative,2
+"Disappointing purchase, this mattress malfunctions constantly.",Negative,1
+"Absolutely love this headphones, best purchase I've made this year.",Positive,4
+"This keyboard is a game changer, super comfortable and durable.",Positive,5
+"Extremely uncomfortable mouse, returning it right away.",Negative,2
+"Awful experience, the laptop does not work as advertised.",Negative,2
+The phone works perfectly and looks even better than the pictures.,Positive,4
+"Superb quality and great value, this keyboard is perfect.",Positive,5
+The sofa works perfectly and looks even better than the pictures.,Positive,4
+"This sofa is overpriced junk, do not waste your money.",Negative,2
+"Worst jacket I have ever bought, complete waste of money.",Negative,2
+"Wonderful experience with this mouse, works flawlessly.",Positive,5
+"This sunglasses is amazing, exceeded all my expectations!",Positive,4
+"The sunglasses exceeded my expectations, five stars from me.",Positive,4
+"I love how well made this watch is, no complaints at all.",Positive,4
+"Horrible shoes, I want a refund immediately.",Negative,1
+"Really impressed with this keyboard, will definitely buy again.",Positive,4
+"Very satisfied customer here, this laptop is outstanding.",Positive,4
+"Awful experience, the shoes does not work as advertised.",Negative,2
+"This sunglasses is overpriced junk, do not waste your money.",Negative,2
+"Couldn't be happier with this wallet, great purchase.",Positive,5
+"I regret buying this speaker, it stopped working within a week.",Negative,1
+"Terrible quality phone, not worth the price at all.",Negative,2
+"Poor performance and bad quality, this sunglasses is a scam.",Negative,1
+"I love how well made this blender is, no complaints at all.",Positive,4
+"Fantastic sunglasses, customer service was also very helpful.",Positive,5
+"Horrible wallet, I want a refund immediately.",Negative,2
+"Very satisfied customer here, this tablet is outstanding.",Positive,5
+"Fantastic wallet, customer service was also very helpful.",Positive,4
+This watch is the worst product I have purchased online.,Negative,1
+"This phone broke after just two days of use, very disappointed.",Negative,1
+"This sunglasses is overpriced junk, do not waste your money.",Negative,1
+"Superb quality and great value, this sofa is perfect.",Positive,5
+"Terrible quality tablet, not worth the price at all.",Negative,1
+"Absolutely love this shoes, best purchase I've made this year.",Positive,5
+"This headphones is a total disappointment, would not recommend.",Negative,2
+"Very satisfied customer here, this camera is outstanding.",Positive,4
+The headphones was delivered late and in poor condition.,Negative,2
+"Not satisfied at all, this mattress is defective and useless.",Negative,2
+"I am very unhappy with this speaker, it simply does not work.",Negative,1
+The camera stopped functioning properly after minimal use.,Negative,2
+"Terrible quality blender, not worth the price at all.",Negative,1
+"This headphones is a game changer, super comfortable and durable.",Positive,5
+Excellent phone! Fast shipping and amazing build quality.,Positive,5
+The headphones feels premium and performs even better.,Positive,4
+"Top notch headphones, sturdy, stylish, and easy to use.",Positive,4
+"Disappointing purchase, this mouse malfunctions constantly.",Negative,1
+"I am very unhappy with this tablet, it simply does not work.",Negative,1
+"Top notch keyboard, sturdy, stylish, and easy to use.",Positive,4
+"This jacket is a game changer, super comfortable and durable.",Positive,5
+The tablet stopped functioning properly after minimal use.,Negative,2
+"Disappointing purchase, this speaker malfunctions constantly.",Negative,2
+The watch works perfectly and looks even better than the pictures.,Positive,4
+"Worst laptop I have ever bought, complete waste of money.",Negative,1
+"Extremely uncomfortable charger, returning it right away.",Negative,2
+Excellent speaker! Fast shipping and amazing build quality.,Positive,5
+"Poor performance and bad quality, this sunglasses is a scam.",Negative,1
+"Horrible watch, I want a refund immediately.",Negative,1
+"This laptop is a total disappointment, would not recommend.",Negative,2
+The shoes feels premium and performs even better.,Positive,4
+"I regret buying this bottle, it stopped working within a week.",Negative,1
+"I am so happy with this speaker, it arrived quickly and works great.",Positive,4
+"I am so happy with this sunglasses, it arrived quickly and works great.",Positive,5
+The watch was delivered late and in poor condition.,Negative,2
+"Superb quality and great value, this mouse is perfect.",Positive,4
+The wallet feels premium and performs even better.,Positive,4
+"Awful experience, the blender does not work as advertised.",Negative,2
+The shoes arrived damaged and customer service was unhelpful.,Negative,2
+"This blender is exactly what I needed, works like a charm.",Positive,5
+"Absolutely love this headphones, best purchase I've made this year.",Positive,4
+"This wallet broke after just two days of use, very disappointed.",Negative,2
+"Poor performance and bad quality, this tablet is a scam.",Negative,2
+"Awful experience, the camera does not work as advertised.",Negative,1
+The jacket stopped functioning properly after minimal use.,Negative,2
+"Superb quality and great value, this backpack is perfect.",Positive,4
+"This charger is reliable, comfortable, and simply amazing.",Positive,4
+"The bottle exceeded my expectations, five stars from me.",Positive,5
+"I am very unhappy with this bottle, it simply does not work.",Negative,2
+"Disappointing purchase, this keyboard malfunctions constantly.",Negative,1
+"Best backpack I have ever owned, worth every penny.",Positive,4
+"This shoes is reliable, comfortable, and simply amazing.",Positive,5
+"Absolutely love this headphones, best purchase I've made this year.",Positive,5
+"Best charger I have ever owned, worth every penny.",Positive,4
+The laptop works perfectly and looks even better than the pictures.,Positive,5
+"Really impressed with this backpack, will definitely buy again.",Positive,5
+The bottle works perfectly and looks even better than the pictures.,Positive,5
+"This headphones is exactly what I needed, works like a charm.",Positive,4
+The mattress works perfectly and looks even better than the pictures.,Positive,5
+"This backpack is a game changer, super comfortable and durable.",Positive,5
+"I love how well made this headphones is, no complaints at all.",Positive,4
+"This camera is exactly what I needed, works like a charm.",Positive,5
+"Not satisfied at all, this speaker is defective and useless.",Negative,2
+"Cheaply made monitor, broke on the first day of use.",Negative,1
+"Great quality charger for the price, highly recommend to everyone.",Positive,5
+"This watch is exactly what I needed, works like a charm.",Positive,5
+"Worst blender I have ever bought, complete waste of money.",Negative,1
+"Disappointing purchase, this mattress malfunctions constantly.",Negative,1
+"Terrible quality sunglasses, not worth the price at all.",Negative,1
+"Poor performance and bad quality, this shoes is a scam.",Negative,2
+"Horrible sunglasses, I want a refund immediately.",Negative,1
+"Absolutely love this keyboard, best purchase I've made this year.",Positive,4
+"I love how well made this tablet is, no complaints at all.",Positive,5
+"Very poor build quality, this tablet feels cheap and flimsy.",Negative,1
+"The headphones exceeded my expectations, five stars from me.",Positive,4
+"Wonderful experience with this backpack, works flawlessly.",Positive,4
+"This backpack is a total disappointment, would not recommend.",Negative,2
+The camera arrived damaged and customer service was unhelpful.,Negative,1
+"Fantastic wallet, customer service was also very helpful.",Positive,4
+The mouse works perfectly and looks even better than the pictures.,Positive,4
+This monitor is the worst product I have purchased online.,Negative,1
+"Best jacket I have ever owned, worth every penny.",Positive,4
+"Couldn't be happier with this mattress, great purchase.",Positive,4
+The sunglasses arrived damaged and customer service was unhelpful.,Negative,2
+"Extremely uncomfortable jacket, returning it right away.",Negative,2
+"Poor performance and bad quality, this mattress is a scam.",Negative,1
+"I am very unhappy with this mattress, it simply does not work.",Negative,2
+"Best mattress I have ever owned, worth every penny.",Positive,5
+The mattress was delivered late and in poor condition.,Negative,1
+"Very poor build quality, this keyboard feels cheap and flimsy.",Negative,2
+"This keyboard is overpriced junk, do not waste your money.",Negative,1
+"Horrible headphones, I want a refund immediately.",Negative,1
+"Disappointing purchase, this backpack malfunctions constantly.",Negative,2
+"Terrible quality phone, not worth the price at all.",Negative,1
+"This jacket is a total disappointment, would not recommend.",Negative,1
+"Superb quality and great value, this sofa is perfect.",Positive,4
+The tablet was delivered late and in poor condition.,Negative,2
+"Really impressed with this sofa, will definitely buy again.",Positive,4
+"Poor performance and bad quality, this speaker is a scam.",Negative,2
+"Poor performance and bad quality, this tablet is a scam.",Negative,1
+"Top notch wallet, sturdy, stylish, and easy to use.",Positive,4
+"Great quality blender for the price, highly recommend to everyone.",Positive,4
+The camera arrived damaged and customer service was unhelpful.,Negative,2
+"Superb quality and great value, this shoes is perfect.",Positive,5
+"Superb quality and great value, this tablet is perfect.",Positive,4
+"Great quality jacket for the price, highly recommend to everyone.",Positive,5
+This tablet is the worst product I have purchased online.,Negative,2
+"I regret buying this monitor, it stopped working within a week.",Negative,1
+"Really impressed with this sunglasses, will definitely buy again.",Positive,4
+"I love how well made this mattress is, no complaints at all.",Positive,5
+"This monitor is a total disappointment, would not recommend.",Negative,2
+"Wonderful experience with this wallet, works flawlessly.",Positive,4
+"Couldn't be happier with this sofa, great purchase.",Positive,4
+"This headphones broke after just two days of use, very disappointed.",Negative,1
+"Best wallet I have ever owned, worth every penny.",Positive,4
+"This watch broke after just two days of use, very disappointed.",Negative,2
+"I am so happy with this jacket, it arrived quickly and works great.",Positive,5
+"Cheaply made bottle, broke on the first day of use.",Negative,2
+"The blender looks nothing like the pictures, very misleading.",Negative,2
+"Fantastic laptop, customer service was also very helpful.",Positive,4
+"Very poor build quality, this jacket feels cheap and flimsy.",Negative,2
+"Absolutely love this blender, best purchase I've made this year.",Positive,4
+"This tablet is overpriced junk, do not waste your money.",Negative,2
+"Cheaply made charger, broke on the first day of use.",Negative,2
+"Fantastic mouse, customer service was also very helpful.",Positive,4
+"Fantastic sofa, customer service was also very helpful.",Positive,4
+"I love how well made this shoes is, no complaints at all.",Positive,5
+"This headphones is a total disappointment, would not recommend.",Negative,1
+"Fantastic headphones, customer service was also very helpful.",Positive,4
+"This sofa is a total disappointment, would not recommend.",Negative,1
+The speaker stopped functioning properly after minimal use.,Negative,1
+"Worst mouse I have ever bought, complete waste of money.",Negative,1
+"Poor performance and bad quality, this shoes is a scam.",Negative,1
+"Fantastic sunglasses, customer service was also very helpful.",Positive,4
+"Poor performance and bad quality, this sunglasses is a scam.",Negative,2
+"This sofa is a game changer, super comfortable and durable.",Positive,4
+"This sunglasses is overpriced junk, do not waste your money.",Negative,2
+Excellent watch! Fast shipping and amazing build quality.,Positive,5
+The jacket works perfectly and looks even better than the pictures.,Positive,4
+"Cheaply made laptop, broke on the first day of use.",Negative,1
+"Awful experience, the laptop does not work as advertised.",Negative,2
+"This blender is overpriced junk, do not waste your money.",Negative,2
+The camera stopped functioning properly after minimal use.,Negative,2
+"Awful experience, the backpack does not work as advertised.",Negative,1
+This phone is the worst product I have purchased online.,Negative,1
+"I am very unhappy with this monitor, it simply does not work.",Negative,2
+The laptop feels premium and performs even better.,Positive,4
+"I am very unhappy with this mattress, it simply does not work.",Negative,1
+The blender was delivered late and in poor condition.,Negative,2
+"The speaker exceeded my expectations, five stars from me.",Positive,5
+"Fantastic camera, customer service was also very helpful.",Positive,4
+"The sofa exceeded my expectations, five stars from me.",Positive,5
+The blender stopped functioning properly after minimal use.,Negative,1
+"Terrible quality sunglasses, not worth the price at all.",Negative,1
+"Horrible watch, I want a refund immediately.",Negative,1
+"Wonderful experience with this sofa, works flawlessly.",Positive,4
+"Wonderful experience with this watch, works flawlessly.",Positive,4
+"This speaker is exactly what I needed, works like a charm.",Positive,4
+"I regret buying this camera, it stopped working within a week.",Negative,2
+"This tablet is reliable, comfortable, and simply amazing.",Positive,4
+"Worst monitor I have ever bought, complete waste of money.",Negative,1
+"This keyboard is exactly what I needed, works like a charm.",Positive,4
+"Poor performance and bad quality, this sofa is a scam.",Negative,2
+"Cheaply made speaker, broke on the first day of use.",Negative,2
+"Fantastic speaker, customer service was also very helpful.",Positive,5
+"The camera looks nothing like the pictures, very misleading.",Negative,1
+"This monitor is overpriced junk, do not waste your money.",Negative,2
+"Poor performance and bad quality, this phone is a scam.",Negative,2
+"Absolutely love this keyboard, best purchase I've made this year.",Positive,5
+"This watch is a total disappointment, would not recommend.",Negative,1
+"Really impressed with this mouse, will definitely buy again.",Positive,4
