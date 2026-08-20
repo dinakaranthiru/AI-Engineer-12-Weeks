@@ -36,4 +36,10 @@ AI-Engineer-12-Weeks/
 ├── Week8_Task/
 │   └── Sentiment_Analysis.ipynb
 │
+├── Week9_Task/
+│   └── Model_Optimization.ipynb
+│
+├── Week8_Task/
+│   └── Model_Api.ipynb
+│
 └── README.md
