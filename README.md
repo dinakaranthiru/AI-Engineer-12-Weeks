@@ -39,7 +39,7 @@ AI-Engineer-12-Weeks/
 ├── Week9_Task/
 │   └── Model_Optimization.ipynb
 │
-├── Week8_Task/
+├── Week10_Task/
 │   └── Model_Api.ipynb
 │
 └── README.md
