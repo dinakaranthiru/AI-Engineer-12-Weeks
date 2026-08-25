@@ -1,51 +1,201 @@
 text,category
-Cannot login,Login issue
-Unable to log in to my account,Login issue
-Login page keeps failing,Login issue
-Forgot password and cannot sign in,Login issue
-Incorrect username or password error,Login issue
-My login credentials are not working,Login issue
-App won't let me log in,Login issue
-Sign in button does not respond,Login issue
-Two-factor authentication failed,Login issue
-Account locked after multiple attempts,Login issue
-Cannot access account after password reset,Login issue
-Login session expires immediately,Login issue
-Upload failed,Upload issue
-File upload is not working,Upload issue
-Cannot upload my document,Upload issue
 Upload keeps getting stuck at 90 percent,Upload issue
-Error while uploading image,Upload issue
-Attachment upload failed repeatedly,Upload issue
-Unable to upload large files,Upload issue
-Document upload shows unknown error,Upload issue
-Drag and drop upload not working,Upload issue
-Upload takes forever and then fails,Upload issue
-File format not accepted during upload,Upload issue
-Upload progress bar freezes midway,Upload issue
-Network timeout,Network issue
-Connection keeps dropping,Network issue
-Slow internet connection on app,Network issue
-Server not responding due to network error,Network issue
-Network unreachable error,Network issue
-Wifi disconnects while using the app,Network issue
-Timeout error connecting to server,Network issue
-Frequent packet loss detected,Network issue
-VPN connection keeps disconnecting,Network issue
-Application cannot reach backend server,Network issue
-Request failed due to network latency,Network issue
-Internet connection unstable,Network issue
-Permission denied,Permission issue
-Access denied to this folder,Permission issue
-User does not have permission to view file,Permission issue
-Insufficient permissions to edit document,Permission issue
-Admin rights required error,Permission issue
-Cannot access restricted resource,Permission issue
+Incorrect username or password error,Login issue
+Upload fails with server error 500,Upload issue
+Settings not saving after change,Bug report
 Permission error when opening file,Permission issue
-Read-only access preventing changes,Permission issue
-Authorization failed for requested action,Permission issue
-User role does not allow this operation,Permission issue
-Access revoked unexpectedly,Permission issue
+Unable to complete payment transaction,Payment issue
+Payment method expired needs update,Payment issue
+Form validation not working correctly,Bug report
+Account verification email never arrives,Login issue
+Cannot connect to server from office network,Network issue
+Tax calculation wrong on invoice,Payment issue
 Cannot delete file due to permissions,Permission issue
-Folder sharing permissions missing,Permission issue
+App wont let me log in,Login issue
+Mobile data not connecting to service,Network issue
+Permission denied when opening file,Permission issue
+Forgot password cannot sign in,Login issue
+Missing scope for this action,Permission issue
+Payment gateway timeout error,Payment issue
+Error while uploading image,Upload issue
+Requesting single sign on support,Feature request
+Receipt not generated after payment,Payment issue
+Upload failed for my file,Upload issue
+High CPU usage causing lag,Performance issue
+Unable to log in,Login issue
+Drag and drop upload not working,Upload issue
+Connection reset by peer error,Network issue
+Document upload shows unknown error,Upload issue
+Auto renewal charged wrong amount,Payment issue
+Please add advanced search filters,Feature request
+Wrong date displayed on report,Bug report
+Currency conversion error at checkout,Payment issue
+Add option to customize dashboard,Feature request
+Slow response time from server,Performance issue
+Requesting integration with calendar app,Feature request
+Requesting a mobile app version,Feature request
+Search results load very slowly,Performance issue
+Please add bulk delete option,Feature request
+Add ability to save custom views,Feature request
+Cannot establish secure connection,Network issue
+Cannot re-upload after failed attempt,Upload issue
+Cannot upload profile picture,Upload issue
+Add ability to schedule reports,Feature request
+Cannot login to my account,Login issue
+Slow database queries causing delays,Performance issue
+Cannot attach files to ticket,Upload issue
+Server unreachable behind firewall,Network issue
+Authorization failed for requested action,Permission issue
+App crashes when clicking save,Bug report
+Cannot add new payment method,Payment issue
+Payment stuck in processing state,Payment issue
+Cannot download payment receipt,Payment issue
+App freezes on specific screen,Bug report
+Double charged for one order,Payment issue
+Add support for two factor login options,Feature request
+Data not saving correctly,Bug report
+Admin rights required error,Permission issue
+Would like offline mode support,Feature request
+Proxy blocking network requests,Network issue
+Wifi disconnects while using the app,Network issue
+Shared folder access revoked,Permission issue
+Notifications not triggering properly,Bug report
+Restricted access to admin panel,Permission issue
+Text overlapping on mobile screen,Bug report
+File format not accepted during upload,Upload issue
+Connection keeps dropping,Network issue
+Role based access control error,Permission issue
+Duplicate entries appearing in list,Bug report
+Cannot access account after password reset,Login issue
+Payment failed during checkout,Payment issue
+Network drops during video call,Network issue
+Network timeout while loading page,Network issue
+Please add dark mode option,Feature request
+Sync process extremely slow,Performance issue
+User role does not allow this operation,Permission issue
+Cannot upload my document,Upload issue
+Lag when switching between tabs,Performance issue
+Cannot view report due to permission level,Permission issue
+Please add undo option for actions,Feature request
+Wallet balance not updating after payment,Payment issue
+Video upload stuck at zero percent,Upload issue
+Application cannot reach backend server,Network issue
+Login page keeps failing,Login issue
+Invoice shows incorrect amount,Payment issue
+Multiple file upload only accepts one,Upload issue
+Promo code expired but still shown,Payment issue
+App is running very slow,Performance issue
+Field disappears after page refresh,Bug report
+Requesting webhook support for events,Feature request
+Upload button does nothing,Upload issue
+Sign in button does not respond,Login issue
+Cannot cancel subscription billing,Payment issue
+Requesting ability to tag items,Feature request
+Cannot invite team members no permission,Permission issue
+Request failed due to network latency,Network issue
+Export function produces corrupted file,Bug report
+Search returns incorrect results,Bug report
+Two-factor authentication failed,Login issue
+VPN connection keeps disconnecting,Network issue
+Currency symbol wrong in totals,Bug report
+App becomes unresponsive after some time,Performance issue
+Add drag and drop reordering,Feature request
+CSV upload rejected as invalid,Upload issue
 Security policy blocks access,Permission issue
+Button click does nothing,Bug report
+File size limit error while uploading,Upload issue
+Refund not processed yet,Payment issue
+Icons missing after latest update,Bug report
+Gateway timeout error 504,Network issue
+Bandwidth throttling causing failures,Network issue
+Guest user blocked from editing,Permission issue
+Failed payment retry not working,Payment issue
+Access revoked unexpectedly,Permission issue
+My login credentials are not working,Login issue
+Requesting dark theme for reports,Feature request
+Reports take forever to generate,Performance issue
+Getting invalid credentials error on login,Login issue
+Photo upload crashes the app,Upload issue
+Access token permissions insufficient,Permission issue
+Cannot log in on mobile app,Login issue
+Server not responding due to network error,Network issue
+High latency causing lag,Network issue
+Feature stopped working after update,Bug report
+Please allow custom notification settings,Feature request
+User does not have permission to view file,Permission issue
+App shows blank page after login,Bug report
+App logs out randomly during use,Bug report
+Add option to filter by date range,Feature request
+Folder sharing permissions missing,Permission issue
+Page takes too long to load,Performance issue
+Memory usage keeps increasing,Performance issue
+Face ID login not working,Login issue
+DNS resolution failure on connect,Network issue
+Incorrect values shown in dashboard,Bug report
+App loses connection intermittently,Network issue
+Access denied to this folder,Permission issue
+Cannot approve request lacking permission,Permission issue
+Payment confirmation email missing,Payment issue
+Chargeback dispute unresolved,Payment issue
+Cannot access restricted resource,Permission issue
+Coupon code not applying at checkout,Payment issue
+Video playback buffering constantly,Performance issue
+Dashboard freezes when loading data,Performance issue
+Slow internet connection on app,Network issue
+Broken link in email notification,Bug report
+Requesting export to excel feature,Feature request
+OTP not received during login,Login issue
+UI freezes during data export,Performance issue
+Please add team collaboration features,Feature request
+Cannot change settings without admin role,Permission issue
+Upload quota exceeded error,Upload issue
+Error message appears randomly,Bug report
+Slow rendering of charts,Performance issue
+File upload is not working,Upload issue
+Upload timeout on slow connection,Upload issue
+Scrolling is choppy and slow,Performance issue
+Insufficient permissions to edit document,Permission issue
+Spinner never stops loading,Performance issue
+Attachment upload failed repeatedly,Upload issue
+Application hangs on startup,Performance issue
+Upload progress bar freezes,Upload issue
+Please add keyboard shortcuts,Feature request
+Intermittent connectivity on cellular network,Network issue
+Upload takes forever and then fails,Upload issue
+App lags with large datasets,Performance issue
+Login session expires immediately,Login issue
+Timeout error connecting to server,Network issue
+Please add reminder notifications,Feature request
+Add option to archive old tickets,Feature request
+Chart displaying incorrect data,Bug report
+Batch processing taking too long,Performance issue
+Would like multi language support,Feature request
+Requesting API access for automation,Feature request
+Sorting feature broken in table,Bug report
+Filter not applying correctly,Bug report
+Frequent packet loss detected,Network issue
+Unable to upload large files,Upload issue
+Notifications delayed by several minutes,Performance issue
+Session keeps logging me out,Login issue
+Cannot update billing information,Payment issue
+Excessive loading time for images,Performance issue
+Captcha failing during login,Login issue
+Internet connection unstable,Network issue
+Cannot reset my forgotten password,Login issue
+Subscription payment failed to renew,Payment issue
+Transaction declined by bank,Payment issue
+Login redirect loop issue,Login issue
+Account locked after multiple attempts,Login issue
+Network unreachable error,Network issue
+App crashes under heavy load,Performance issue
+Login page shows blank screen,Login issue
+App takes long time to open,Performance issue
+Unauthorized error when calling API,Permission issue
+Account suspended cannot log in,Login issue
+Sluggish performance on older devices,Performance issue
+Login button greyed out,Login issue
+Password reset link not working,Login issue
+Calendar dates showing wrong timezone,Bug report
+Credit card declined at payment,Payment issue
+Bulk upload not processing files,Upload issue
+Read-only access preventing changes,Permission issue
