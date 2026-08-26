@@ -19,14 +19,11 @@ templates = Jinja2Templates(directory="templates")
  
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
-    """Serves the browser UI."""
     return templates.TemplateResponse("index.html", {"request": request})
  
  
 @app.post("/predict", response_model=TicketResponse)
 def predict(payload: TicketRequest):
-    """POST /predict  ->  {"text": "cannot login to system"}
-    Returns: {"category": "Login issue", "confidence": 0.94}"""
     if not payload.text.strip():
         raise HTTPException(status_code=400, detail="Text field cannot be empty")
  
@@ -36,5 +33,4 @@ def predict(payload: TicketRequest):
  
 @app.get("/health")
 def health_check():
-    """Simple endpoint for uptime/monitoring checks."""
     return {"status": "ok"}
