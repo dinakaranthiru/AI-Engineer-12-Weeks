@@ -73,9 +73,9 @@ uvicorn app.main:app --reload
 
 The server is available at:
 
-- Web UI: http://127.0.0.1:8000/
-- Swagger documentation: http://127.0.0.1:8000/docs
-- ReDoc documentation: http://127.0.0.1:8000/redoc
+- Web UI: <http://127.0.0.1:8000/>
+- Swagger documentation: <http://127.0.0.1:8000/docs>
+- ReDoc documentation: <http://127.0.0.1:8000/redoc>
 
 Stop the development server with `Ctrl+C`.
 
