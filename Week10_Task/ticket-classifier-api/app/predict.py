@@ -15,7 +15,7 @@ model = joblib.load("model/ticket_classifier.pkl")
 vectorizer = joblib.load("model/tfidf_vectorizer.pkl")
  
  
-def clean_text(text: str) -> str:
+def clean_text(text):
     """Same cleaning steps used during training: strip non-letters,
     lowercase, remove stopwords, lemmatize as verbs."""
     text = re.sub("[^a-zA-Z]", " ", text)
@@ -25,7 +25,7 @@ def clean_text(text: str) -> str:
     return " ".join(tokens)
  
  
-def predict_category(text: str):
+def predict_category(text):
     cleaned = clean_text(text)
     vector = vectorizer.transform([cleaned])
     prediction = model.predict(vector)[0]
