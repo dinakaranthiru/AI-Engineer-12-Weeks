@@ -34,7 +34,6 @@
  
       btn.textContent = "Predicting...";
       btn.disabled = true;
- 
       try {
         const response = await fetch("/predict", {
           method: "POST",
