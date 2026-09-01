@@ -2,6 +2,7 @@ from fastapi import FastAPI, Request, HTTPException
 from fastapi.staticfiles import StaticFiles 
 from fastapi.templating import Jinja2Templates 
 from fastapi.responses import HTMLResponse 
+from fastapi.middleware.cors import CORSMiddleware
  
 from app.schemas import TicketRequest, TicketResponse
 from app.predict import predict_category
@@ -11,7 +12,15 @@ app = FastAPI(
     description="Classifies support tickets into catlegories using a trained ML model.",
     version="1.0.0",
 )
- 
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # serve CSS/JS and the HTML template
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
