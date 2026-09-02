@@ -9,7 +9,7 @@ export default function TicketClassifier() {
 
   const handleSubmit = async (e) => {
 
-    // if(hasFetched) return;
+    if(hasFetched) return;
     e.preventDefault();
     setError('');
     setResult(null);
@@ -21,17 +21,16 @@ export default function TicketClassifier() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ text: text }), // Matches TicketRequest schema
+        body: JSON.stringify({ text: text }),
       });
 
       const data = await response.json();
  
       if (!response.ok) {
-        // Captures either your status 400 error or Pydantic's 422 validation errors
         throw new Error(data.detail || data.error || 'Something went wrong');
       }
 
-      setResult(data); // Matches TicketResponse schema ({ category, confidence })
+      setResult(data); 
     } catch (err) {
       setError(err.message);
     } finally {
