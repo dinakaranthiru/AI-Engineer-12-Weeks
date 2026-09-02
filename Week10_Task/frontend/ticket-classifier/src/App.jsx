@@ -1,4 +1,4 @@
-import TicketClassifier from "./TicketClassifer"; // Ensure this matches your filename spelling!
+import TicketClassifier from "./TicketClassifer";
 
 const App = () => {
   return <TicketClassifier />;
