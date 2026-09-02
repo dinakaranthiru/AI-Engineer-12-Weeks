@@ -9,7 +9,7 @@ from app.predict import predict_category
  
 app = FastAPI(
     title="Support Ticket Classifier API",
-    description="Classifies support tickets into catlegories using a trained ML model.",
+    description="Classifies support tickets into categories using a trained ML model.",
     version="1.0.0",
 )
 
@@ -20,19 +20,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# serve CSS/JS and the HTML template
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
- 
- 
-@app.get("/", response_class=HTMLResponse)
-def home(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
- 
  
 @app.post("/predict", response_model=TicketResponse)
-def predict(payload: TicketRequest):
+async def predict(payload: TicketRequest):
     if not payload.text.strip():
         raise HTTPException(status_code=400, detail="Text field cannot be empty")
  
@@ -41,5 +31,5 @@ def predict(payload: TicketRequest):
  
  
 @app.get("/health")
-def health_check():
+async def health_check():
     return {"status": "ok"}
