@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+ticket-classifier/node_modules/
+
+# Build output
+build/
+dist/
+.ticket-classifier/dist/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
