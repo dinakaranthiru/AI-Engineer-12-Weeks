@@ -1,8 +1,5 @@
-from fastapi import FastAPI, Request, HTTPException
-from fastapi.staticfiles import StaticFiles 
-from fastapi.templating import Jinja2Templates 
-from fastapi.responses import HTMLResponse 
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI,HTTPException # type: ignore
+from fastapi.middleware.cors import CORSMiddleware # type: ignore
  
 from app.schemas import TicketRequest, TicketResponse
 from app.predict import predict_category
