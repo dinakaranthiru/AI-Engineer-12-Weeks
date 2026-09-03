@@ -5,14 +5,17 @@ export default function TicketClassifier() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-    const [hasFetched, setHasFetched] = useState(false);
 
   const handleSubmit = async (e) => {
-
-    if(hasFetched) return;
     e.preventDefault();
     setError('');
     setResult(null);
+
+    if (!text.trim()) {
+      setError('Please enter a ticket description before analyzing.');
+      return;
+    }
+
     setLoading(true);
 
     try {
