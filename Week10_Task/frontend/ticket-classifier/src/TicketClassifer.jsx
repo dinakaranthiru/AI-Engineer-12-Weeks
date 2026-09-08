@@ -145,7 +145,7 @@ export default function TicketClassifier() {
                 Ticket Intelligence
               </h1>
               <p style={{ fontSize: '13px', color: 'rgba(203, 213, 225, 0.8)', marginTop: '2px' }}>
-                iPhone Liquid Glass · Natural Language Processing Classifier
+                Natural Language Processing Classifier
               </p>
             </div>
           </div>
