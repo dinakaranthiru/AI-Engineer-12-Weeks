@@ -413,7 +413,7 @@ export default function TicketClassifier() {
         {/* Footer info pill */}
         <footer style={{ textAlign: 'center', marginTop: '12px' }}>
           <span style={{ fontSize: '12px', color: 'rgba(148, 163, 184, 0.6)' }}>
-            Designed with Apple iOS Liquid Glass aesthetics · Antigravity AI Engineering
+            ML Ticket Classifier 
           </span>
         </footer>
       </main>
