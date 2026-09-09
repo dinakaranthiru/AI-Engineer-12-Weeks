@@ -34,6 +34,20 @@ export default function TicketClassifier() {
         },
         body: JSON.stringify({ text: text }),
       });
+      try {
+        response = await fetch('http://127.0.0.1:8000/predict', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: text }),
+        });
+      } catch (firstErr) {
+        // Fallback to localhost if 127.0.0.1 is blocked by browser/cors
+        response = await fetch('http://localhost:8000/predict', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: text }),
+        });
+      }
 
       const data = await response.json();
 
@@ -44,13 +58,18 @@ export default function TicketClassifier() {
       setResult(data);
     } catch (err) {
       setError(err.message || 'Unable to connect to FastAPI backend at localhost:8000');
+      setError(
+        err.message?.includes('Failed to fetch')
+          ? 'Cannot reach FastAPI backend. Make sure the backend server is running on port 8000 (e.g. uvicorn app.main:app --reload)'
+          : err.message || 'Unable to connect to FastAPI backend at port 8000'
+      );
     } finally {
       setLoading(false);
     }
   };
 
   const getCategoryTheme = (cat = '') => {
-    const c = cat.toLowerCase();
+    const c = String(cat).toLowerCase();
     if (c.includes('login') || c.includes('auth')) {
       return { icon: '🔐', color: '#818cf8', glow: 'rgba(129, 140, 248, 0.4)' };
     }
@@ -75,8 +94,9 @@ export default function TicketClassifier() {
     return { icon: '🏷️', color: '#a855f7', glow: 'rgba(168, 85, 247, 0.4)' };
   };
 
-  const categoryMeta = result ? getCategoryTheme(result.category) : null;
-  const confidencePct = result ? Math.round(result.confidence * 100) : 0;
+  const rawConfidence = typeof result?.confidence === 'number' ? result.confidence : 0;
+  const confidencePct = Math.min(100, Math.max(0, Math.round(rawConfidence * 100)));
+  const categoryMeta = result?.category ? getCategoryTheme(result.category) : null;
 
   return (
     <div style={{ position: 'relative', minHeight: '100vh', width: '100%', overflow: 'hidden' }}>
@@ -145,7 +165,7 @@ export default function TicketClassifier() {
                 Ticket Intelligence
               </h1>
               <p style={{ fontSize: '13px', color: 'rgba(203, 213, 225, 0.8)', marginTop: '2px' }}>
-                Natural Language Processing Classifier
+                iPhone Liquid Glass · Natural Language Processing Classifier
               </p>
             </div>
           </div>
@@ -413,7 +433,7 @@ export default function TicketClassifier() {
         {/* Footer info pill */}
         <footer style={{ textAlign: 'center', marginTop: '12px' }}>
           <span style={{ fontSize: '12px', color: 'rgba(148, 163, 184, 0.6)' }}>
-            ML Ticket Classifier 
+            Designed with Apple iOS Liquid Glass aesthetics · Antigravity AI Engineering
           </span>
         </footer>
       </main>
