@@ -27,13 +27,6 @@ export default function TicketClassifier() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/predict', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ text: text }),
-      });
       try {
         response = await fetch('http://127.0.0.1:8000/predict', {
           method: 'POST',
@@ -57,7 +50,6 @@ export default function TicketClassifier() {
 
       setResult(data);
     } catch (err) {
-      setError(err.message || 'Unable to connect to FastAPI backend at localhost:8000');
       setError(
         err.message?.includes('Failed to fetch')
           ? 'Cannot reach FastAPI backend. Make sure the backend server is running on port 8000 (e.g. uvicorn app.main:app --reload)'
