@@ -1,34 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Navbar from './components/Navbar';
 import SinglePrediction from './components/SinglePrediction';
 import BatchPrediction from './components/BatchPrediction';
 import { checkBackendHealth } from './services/api';
-import { AlertCircle, Terminal, CheckCircle2 } from 'lucide-react';
+import { AlertCircle, Terminal } from 'lucide-react';
 import './App.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState('single'); // 'single' | 'batch'
   const [backendStatus, setBackendStatus] = useState('checking'); // 'connected' | 'disconnected' | 'checking'
-  const [backendInfo, setBackendInfo] = useState(null);
 
-  const testHealth = async () => {
-    setBackendStatus('checking');
+  const testHealth = useCallback(async () => {
     try {
-      const data = await checkBackendHealth();
+      await checkBackendHealth();
       setBackendStatus('connected');
-      setBackendInfo(data);
     } catch {
       setBackendStatus('disconnected');
-      setBackendInfo(null);
     }
+  }, []);
+
+  const handleRetry = () => {
+    setBackendStatus('checking');
+    testHealth();
   };
 
   useEffect(() => {
     testHealth();
-    // Periodically verify connection every 15 seconds
-    // const timer = setInterval(testHealth, 15000);
-    // return () => clearInterval(timer);
-  }, []);
+  }, [testHealth]);
 
   return (
     <div className="app-layout">
@@ -37,7 +35,7 @@ function App() {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         backendStatus={backendStatus}
-        onRetryHealth={testHealth}
+        onRetryHealth={handleRetry}
       />
 
       {/* Disconnection Warning Banner if backend is down */}
@@ -53,7 +51,7 @@ function App() {
               <Terminal size={14} />
               <code>cd churn-predictor-api && uvicorn app.main:app --reload --port 8000</code>
             </div>
-            <button type="button" className="banner-retry-btn" onClick={testHealth}>
+            <button type="button" className="banner-retry-btn" onClick={handleRetry}>
               Check Again
             </button>
           </div>
@@ -74,7 +72,7 @@ function App() {
       <footer className="footer-container">
         <div className="footer-content">
           <p>
-            Week 11 Machine Learning Deployment • Random Forest Churn Classifier Pipeline
+            Machine Learning Deployment • Random Forest Churn Classifier Pipeline
           </p>
           <div className="footer-badges">
             <span className="footer-badge">FastAPI 1.1</span>
