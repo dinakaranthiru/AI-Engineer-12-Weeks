@@ -42,4 +42,6 @@ AI-Engineer-12-Weeks/
 ├── Week10_Task/
 │   └── Model_Api.ipynb
 │
+├── Week11_Task/
+│   └── Customer_churn_Predictor.ipynb
 └── README.md
