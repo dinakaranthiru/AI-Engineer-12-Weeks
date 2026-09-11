@@ -12,6 +12,10 @@ import {
   PieChart,
   RefreshCw,
   FileCheck,
+  ChevronLeft,
+  ChevronRight,
+  ChevronsLeft,
+  ChevronsRight,
 } from 'lucide-react';
 import { predictFromFile, getSampleCsvUrl } from '../services/api';
 
@@ -25,6 +29,11 @@ export default function BatchPrediction() {
   // Filters & Search
   const [searchTerm, setSearchTerm] = useState('');
   const [filterRisk, setFilterRisk] = useState('ALL'); // 'ALL' | 'CHURN' | 'STAY' | 'HIGH_RISK'
+
+  // Pagination for large datasets (e.g. 1,000+ rows)
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(10); // 10, 20, 50, 100, 'ALL'
+
   const fileInputRef = useRef(null);
 
   const handleDrag = (e) => {
@@ -72,6 +81,7 @@ export default function BatchPrediction() {
     try {
       const data = await predictFromFile(selectedFile);
       setBatchResult(data);
+      setCurrentPage(1);
     } catch (err) {
       setError(err.message || 'Batch prediction failed. Please check the file format.');
     } finally {
@@ -139,6 +149,8 @@ export default function BatchPrediction() {
     setError(null);
     setSearchTerm('');
     setFilterRisk('ALL');
+    setCurrentPage(1);
+    setPageSize(10);
     if (fileInputRef.current) {
       fileInputRef.current.value = '';
     }
@@ -163,6 +175,35 @@ export default function BatchPrediction() {
 
     return true;
   });
+
+  // Pagination calculations
+  const totalFiltered = filteredRecords.length;
+  const isAll = pageSize === 'ALL';
+  const effectivePageSize = isAll ? (totalFiltered || 1) : Number(pageSize);
+  const totalPages = isAll ? 1 : Math.max(1, Math.ceil(totalFiltered / effectivePageSize));
+  const safeCurrentPage = Math.min(Math.max(1, currentPage), totalPages);
+  const startIndex = isAll ? 0 : (safeCurrentPage - 1) * effectivePageSize;
+  const endIndex = isAll ? totalFiltered : Math.min(startIndex + effectivePageSize, totalFiltered);
+  const displayedRecords = isAll ? filteredRecords : filteredRecords.slice(startIndex, endIndex);
+
+  // Generate numbered pages list: 1 2 3 4 5 6 7 8 9...
+  const getPageNumbers = () => {
+    const pages = [];
+    if (totalPages <= 9) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i);
+      }
+    } else {
+      if (safeCurrentPage <= 4) {
+        pages.push(1, 2, 3, 4, 5, '...', totalPages);
+      } else if (safeCurrentPage >= totalPages - 3) {
+        pages.push(1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+      } else {
+        pages.push(1, '...', safeCurrentPage - 1, safeCurrentPage, safeCurrentPage + 1, '...', totalPages);
+      }
+    }
+    return pages;
+  };
 
   return (
     <div className="batch-container">
@@ -333,7 +374,7 @@ export default function BatchPrediction() {
               <div className="table-title-group">
                 <h3 className="card-title">Prediction Breakdown</h3>
                 <span className="badge-records">
-                  Showing {filteredRecords.length} of {batchResult.records.length} records
+                  Showing {totalFiltered === 0 ? 0 : startIndex + 1}–{endIndex} of {totalFiltered} records {totalFiltered !== batchResult.records.length ? `(filtered from ${batchResult.records.length})` : ''}
                 </span>
               </div>
 
@@ -345,7 +386,10 @@ export default function BatchPrediction() {
                     type="text"
                     placeholder="Search by ID, Country, Gender..."
                     value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
+                    onChange={(e) => {
+                      setSearchTerm(e.target.value);
+                      setCurrentPage(1);
+                    }}
                   />
                 </div>
 
@@ -354,28 +398,40 @@ export default function BatchPrediction() {
                   <button
                     type="button"
                     className={`filter-btn ${filterRisk === 'ALL' ? 'active' : ''}`}
-                    onClick={() => setFilterRisk('ALL')}
+                    onClick={() => {
+                      setFilterRisk('ALL');
+                      setCurrentPage(1);
+                    }}
                   >
                     All
                   </button>
                   <button
                     type="button"
                     className={`filter-btn ${filterRisk === 'CHURN' ? 'active danger' : ''}`}
-                    onClick={() => setFilterRisk('CHURN')}
+                    onClick={() => {
+                      setFilterRisk('CHURN');
+                      setCurrentPage(1);
+                    }}
                   >
                     Churn Risk ({batchResult.summary.churn_count})
                   </button>
                   <button
                     type="button"
                     className={`filter-btn ${filterRisk === 'STAY' ? 'active success' : ''}`}
-                    onClick={() => setFilterRisk('STAY')}
+                    onClick={() => {
+                      setFilterRisk('STAY');
+                      setCurrentPage(1);
+                    }}
                   >
                     Stay ({batchResult.summary.stay_count})
                   </button>
                   <button
                     type="button"
                     className={`filter-btn ${filterRisk === 'HIGH_RISK' ? 'active warn' : ''}`}
-                    onClick={() => setFilterRisk('HIGH_RISK')}
+                    onClick={() => {
+                      setFilterRisk('HIGH_RISK');
+                      setCurrentPage(1);
+                    }}
                   >
                     High Risk ({batchResult.summary.high_risk_count})
                   </button>
@@ -409,8 +465,8 @@ export default function BatchPrediction() {
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredRecords.length > 0 ? (
-                    filteredRecords.map((record) => (
+                  {displayedRecords.length > 0 ? (
+                    displayedRecords.map((record) => (
                       <tr
                         key={record.row_index}
                         className={record.churn === 1 ? 'row-churn-warning' : ''}
@@ -483,10 +539,84 @@ export default function BatchPrediction() {
                 </tbody>
               </table>
             </div>
+
+            {/* Pagination Controls */}
+            {totalFiltered > 0 && (
+              <div className="table-pagination-bar">
+                <div className="pagination-info">
+                  Showing <strong>{startIndex + 1}</strong> to <strong>{endIndex}</strong> of{' '}
+                  <strong>{totalFiltered.toLocaleString()}</strong> customers
+                </div>
+
+                <div className="pagination-actions">
+                  <div className="page-size-selector">
+                    <span>Rows per page:</span>
+                    <select
+                      value={pageSize}
+                      onChange={(e) => {
+                        const val = e.target.value === 'ALL' ? 'ALL' : Number(e.target.value);
+                        setPageSize(val);
+                        setCurrentPage(1);
+                      }}
+                    >
+                      <option value={10}>10</option>
+                      <option value={20}>20</option>
+                      <option value={50}>50</option>
+                      <option value={100}>100</option>
+                      <option value="ALL">All ({totalFiltered.toLocaleString()})</option>
+                    </select>
+                  </div>
+
+                  {!isAll && totalPages > 1 && (
+                    <div className="pagination-numbers-list">
+                      <button
+                        type="button"
+                        className="page-nav-btn text-nav-btn"
+                        disabled={safeCurrentPage === 1}
+                        onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                        title="Previous Page"
+                      >
+                        <ChevronLeft size={16} />
+                        <span>Prev</span>
+                      </button>
+
+                      {getPageNumbers().map((item, idx) =>
+                        item === '...' ? (
+                          <span key={`dots-${idx}`} className="page-ellipsis">
+                            ...
+                          </span>
+                        ) : (
+                          <button
+                            key={`page-${item}`}
+                            type="button"
+                            className={`page-num-btn ${safeCurrentPage === item ? 'active' : ''}`}
+                            onClick={() => setCurrentPage(item)}
+                          >
+                            {item}
+                          </button>
+                        )
+                      )}
+
+                      <button
+                        type="button"
+                        className="page-nav-btn text-nav-btn"
+                        disabled={safeCurrentPage === totalPages}
+                        onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                        title="Next Page"
+                      >
+                        <span>Next</span>
+                        <ChevronRight size={16} />
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}
     </div>
   );
 }
+
 
