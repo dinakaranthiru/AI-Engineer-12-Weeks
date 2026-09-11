@@ -437,10 +437,27 @@ export default function SinglePrediction() {
                 <Award size={18} />
                 <span>Recommended Retention Action</span>
               </div>
-              <p className="action-text">
-                {result.recommendation ||
-                  'Engage proactively with personalized rewards and check-in calls.'}
-              </p>
+              {result.recommendation && result.recommendation.includes(': ') ? (
+                <div className="single-strategy-wrap">
+                  <div className="single-strategy-tag-row">
+                    <span
+                      className={`strategy-badge badge-${(
+                        result.risk_level || 'low'
+                      ).toLowerCase()}`}
+                    >
+                      {result.recommendation.split(': ')[0]}
+                    </span>
+                  </div>
+                  <p className="action-text">
+                    {result.recommendation.split(': ').slice(1).join(': ')}
+                  </p>
+                </div>
+              ) : (
+                <p className="action-text">
+                  {result.recommendation ||
+                    'Engage proactively with personalized rewards and check-in calls.'}
+                </p>
+              )}
             </div>
 
             {/* Profile Factor Breakdown */}

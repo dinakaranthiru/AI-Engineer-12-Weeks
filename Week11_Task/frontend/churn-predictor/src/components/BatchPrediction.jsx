@@ -205,6 +205,27 @@ export default function BatchPrediction() {
     return pages;
   };
 
+  // Highlights the urgency tag (Immediate intervention recommended / Moderate risk / Healthy relationship) distinctly
+  const renderStrategy = (rec, riskLevel) => {
+    if (!rec) return null;
+    const parts = rec.split(': ');
+    if (parts.length > 1) {
+      const tag = parts[0];
+      const details = parts.slice(1).join(': ');
+      return (
+        <div className="strategy-content">
+          <div className="strategy-header">
+            <span className={`strategy-badge badge-${(riskLevel || 'low').toLowerCase()}`}>
+              {tag}
+            </span>
+          </div>
+          <p className="strategy-details">{details}</p>
+        </div>
+      );
+    }
+    return <p className="strategy-details">{rec}</p>;
+  };
+
   return (
     <div className="batch-container">
       {/* Upload Box Card */}
@@ -524,8 +545,14 @@ export default function BatchPrediction() {
                           ></span>
                           {record.active_member === 1 ? 'Active' : 'Inactive'}
                         </td>
-                        <td className="cell-action-text" title={record.recommendation}>
-                          {record.recommendation}
+                        <td className="cell-action-col">
+                          <div
+                            className={`action-strategy-pill action-${(
+                              record.risk_level || 'low'
+                            ).toLowerCase()}`}
+                          >
+                            {renderStrategy(record.recommendation, record.risk_level)}
+                          </div>
                         </td>
                       </tr>
                     ))
