@@ -1,4 +1,3 @@
-import React from 'react';
 import { Activity, ShieldCheck, AlertCircle, FileSpreadsheet, UserCheck, RefreshCw } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab, backendStatus, onRetryHealth }) {
@@ -70,4 +69,3 @@ export default function Navbar({ activeTab, setActiveTab, backendStatus, onRetry
     </header>
   );
 }
-
