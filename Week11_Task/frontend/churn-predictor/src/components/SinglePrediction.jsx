@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import {
   User,
-  CreditCard,
   Building,
   DollarSign,
   TrendingDown,
   TrendingUp,
   AlertTriangle,
   CheckCircle2,
-  HelpCircle,
   Sparkles,
   RefreshCw,
   Award,
